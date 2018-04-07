@@ -1,4 +1,4 @@
-FROM debian:stretch
+FROM m03geek/opencv:stretch
 
 ARG RUNTIME_DEPS='ca-certificates libpng-dev libjpeg-dev libgif-dev libopenblas-dev libx11-dev'
 ARG BUILD_DEPS='apt-utils wget unzip cmake build-essential pkg-config'
