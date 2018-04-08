@@ -27,8 +27,18 @@ Dlib is built from source. Latest git tag corresponds Dlib version.
 * jpeg
 * gif
 
-## FFmpeg support
+# Other images:
 
-FFmpeg support is available in different image:
-* [DockerHub](https://hub.docker.com/r/m03geek/ffmpeg-opencv-dlib/)
-* [Github](https://github.com/SkeLLLa/docker-ffmpeg-opencv-dlib)
+## Without FFmpeg
+
+| OpenCV | OpenCV+Dlib | OpenCV+Dlib+Node.js |
+|-|-|-|
+| [Docker](https://hub.docker.com/r/m03geek/opencv/) | [Docker](https://hub.docker.com/r/m03geek/opencv-dlib/) | [Docker](https://hub.docker.com/r/m03geek/opencv-dlib-node/) |
+| [Github](https://github.com/SkeLLLa/docker-opencv) | [Github](https://github.com/SkeLLLa/docker-opencv-dlib) | [Github](https://github.com/SkeLLLa/docker-opencv-dlib-node) |
+
+## With FFmpeg
+
+| OpenCV | OpenCV+Dlib | OpenCV+Dlib+Node.js |
+|-|-|-|
+| [Docker](https://hub.docker.com/r/m03geek/ffmpeg-opencv/) | [Docker](https://hub.docker.com/r/m03geek/ffmpeg-opencv-dlib/) | [Docker](https://hub.docker.com/r/m03geek/ffmpeg-opencv-dlib-node/) |
+| [Github](https://github.com/SkeLLLa/docker-ffmpeg-opencv) | [Github](https://github.com/SkeLLLa/docker-ffmpeg-opencv-dlib) | [Github](https://github.com/SkeLLLa/docker-ffmpeg-opencv-dlib-node) |
