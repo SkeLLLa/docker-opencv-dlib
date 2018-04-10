@@ -28,7 +28,7 @@ RUN echo "Dlib: ${DLIB_VERSION}" \
     && mkdir -p build \
     && cd build \
     && cmake $dlib_cmake_flags .. \
-    && make -j $(nproc) \
+    && make -j $(getconf _NPROCESSORS_ONLN) \
     && cd /dlib/build \
     && make install \
     && cp /dlib/dlib/*.txt $LIB_PREFIX/include/dlib/ \
