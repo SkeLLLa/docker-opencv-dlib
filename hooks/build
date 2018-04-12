@@ -3,4 +3,4 @@
 tag=$(git describe --abbrev=0 --tags)
 version=${tag:1}
 
-docker build --build-arg=DLIB_VERSION=$version -f $DOCKERFILE_PATH -t $IMAGE_NAME .
+docker build --build-arg=VERSION=$version -t $IMAGE_NAME .
