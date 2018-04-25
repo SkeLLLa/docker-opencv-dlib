@@ -8,6 +8,12 @@ Docker image with compiled OpenCV and Dlib
 
 Based on [opencv image](https://hub.docker.com/r/m03geek/opencv/)
 
+# Versions (latest)
+
+* opencv - 3.4.1
+* dlib - 19.8
+
+
 # Dlib
 
 Dlib is built from source. Latest git tag corresponds Dlib version.
