@@ -34,6 +34,7 @@ RUN echo "Dlib: ${DLIB_VERSION}" \
     && cp /dlib/dlib/*.txt $LIB_PREFIX/include/dlib/ \
     && cd / \
     && rm -rf /dlib \
+    && /usr/glibc-compat/sbin/ldconfig \
     && apk del .build-dependencies \
     && apk add -u --no-cache $RUNTIME_DEPS \
     && rm -rf /var/cache/apk/* /usr/share/man /usr/local/share/man /tmp/*
