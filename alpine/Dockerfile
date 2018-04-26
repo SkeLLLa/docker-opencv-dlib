@@ -12,6 +12,7 @@ ENV DLIB_VERSION=${VERSION} \
 
 RUN echo "Dlib: ${DLIB_VERSION}" \
     && rm -rf /usr/local/lib && ln -s /usr/local/lib64 /usr/local/lib \
+    && apk add -u --no-cache $RUNTIME_DEPS \
     && apk add -u --no-cache --virtual .build-dependencies $BUILD_DEPS \
     && wget -q https://github.com/davisking/dlib/archive/v${DLIB_VERSION}.zip -O dlib.zip \
     && dlib_cmake_flags="-D CMAKE_BUILD_TYPE=RELEASE \
@@ -37,5 +38,4 @@ RUN echo "Dlib: ${DLIB_VERSION}" \
     && rm -rf /dlib \
     && /usr/glibc-compat/sbin/ldconfig \
     && apk del .build-dependencies \
-    && apk add -u --no-cache $RUNTIME_DEPS \
     && rm -rf /var/cache/apk/* /usr/share/man /usr/local/share/man /tmp/*
